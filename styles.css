@@ -1,0 +1,438 @@
+/******************************************************************************
+  Colors
+******************************************************************************/
+
+/*
+  ---Custom purple---
+  rgb(0,150,255);
+  linear-gradient(135deg, rgba(128,0,128,0.75) 0%, rgba(230,230,250,0.5) 100%)
+
+  ---Victoria Purple---
+  rgb(49,42,108)
+  linear-gradient(45deg, rgba(49,42,108,1) 0%, rgba(133,45,145,1) 100%);
+
+  ---Purple Lake--
+  rgb(102,45,140)
+  linear-gradient(45deg, rgba(102,45,140,1) 0%, rgba(237,30,121,1) 100%);
+*/
+
+
+
+
+
+/******************************************************************************
+  Utilities
+******************************************************************************/
+
+.hide {
+  display: none !important;
+}
+
+
+
+
+
+/******************************************************************************
+  General
+******************************************************************************/
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+/******************************************************************************
+  Header
+******************************************************************************/
+
+.navbar {
+  background: rgb(255,255,255);
+  padding: 0;
+  display: flex;
+}
+
+.navbar a { text-decoration: none; }
+
+.navbar-logo {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-logo-title {
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.btn-link:hover{
+  text-decoration: none;
+}
+
+.navbar-collapse a {
+  margin-right: 1rem;
+}
+
+.nav-item {
+  color: rgb(0,150,255);
+  padding: 1em 0.5em;
+}
+
+.nav-item:hover,
+.nav-item:active,
+.active {
+  background-color: rgb(0,150,255);
+  color: rgb(255,255,255);
+}
+
+.navbar-toggler {
+  background-color: white;
+  font-size: 1rem;
+  margin: 0.75rem 1rem;
+}
+
+.navbar .btn { background: rgba(230, 230, 250); }
+
+@media screen and (max-width: 990px) {
+  .nav-item {
+    margin-bottom: 0.25rem;
+  }
+
+  .navbar .btn {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1.25rem;
+    display: block;
+  }
+}
+
+
+
+
+
+/******************************************************************************
+  Main
+******************************************************************************/
+
+/*
+ * Title
+ */
+
+.title-section {
+  background:
+    linear-gradient(135deg, rgba(0,100,255,0.75) 0%, rgba(0,0,0,0.5) 100%),
+    url("assets/img/wallpaper_dog01.png")
+    center/cover;
+  background-attachment: fixed;
+  color: white;
+  height: 100vh;
+}
+
+@media screen and (max-width: 520px) {
+  .display-1 {
+    font-size: 4.5rem;
+  }
+}
+
+/* iPad with portrait orientation. */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  .title-section {
+    height: 1024px;
+  }
+}
+
+/* iPad with landscape orientation. */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+  .title-section {
+    height: 768px;
+  }
+}
+
+.title-content {
+  height: 100%;
+}
+
+
+
+/*
+ * Sections
+ */
+
+h2 {
+  color: rgb(0,150,255);;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+hr {
+  border: 3px solid rgb(0,150,255);;
+  border-radius: 3px;
+  margin-top: 0;
+  width: 70px;
+}
+
+.hover-effect {
+  cursor: pointer;
+}
+
+.hover-effect:hover img {
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*
+ * Quienes somos
+ */
+
+#quienes-somos h4 {
+  font-weight: 600;
+  text-align: center;
+}
+
+#quienes-somos h5 {
+  font-weight: 600;
+}
+
+#quienes-somos img {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+}
+
+#quienes-somos .section-divider {
+  border: 2px rgb(0,150,255);;
+  border-style: solid;
+  border-radius: 5px;
+  width: 65%;
+}
+
+
+
+/*
+ * Que ofrecemos
+ */
+
+#que-ofrecemos {
+  background: rgba(230, 230, 250, 0.3);
+}
+
+#que-ofrecemos img {
+  height: auto;
+  max-width: 100%;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+}
+
+#que-ofrecemos a > p {
+  font-size: 1.25em;
+  padding-top: 5%;
+}
+
+#que-ofrecemos a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#que-ofrecemos h3 {
+  color: rgb(0,150,255);;
+  font-weight: 400;
+}
+
+#que-ofrecemos h4 {
+  color: rgb(0,150,255);;
+  font-weight: 600;
+}
+
+
+
+/*
+ * Alianzas
+ */
+
+#alianzas img {
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+/*
+ * Equipo
+ */
+
+#equipo {
+  background: rgba(230, 230, 250, 0.3);
+}
+
+#equipo img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+}
+
+#equipo a > p {
+  font-size: 1.25em;
+  padding-top: 5%;
+}
+
+#equipo h3 {
+  color: rgb(0,150,255);;
+  font-weight: 400;
+}
+
+#equipo .modal-body {
+  text-align: left;
+}
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  #equipo img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+/* iPhone SE and below */
+@media (max-width: 374.98px) {
+  #equipo img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+
+
+/*
+ * Contacto
+ */
+
+.contact-icons {
+  padding: 0 1em;
+}
+
+#contacto a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-phone:hover {
+  color: rgb(0,129,198);
+}
+
+.contact-email:hover {
+  color: rgb(124,117,117);
+}
+
+.contact-social-networks:hover {
+  color: rgb(0,150,255);;
+}
+
+.contact-address:hover {
+  color: rgb(14,149,119);
+}
+
+#contacto label {
+  margin-bottom: .25rem;
+}
+
+#contacto button {
+  background-color: rgba(139, 141, 122, 0.25);
+}
+
+#contacto button:hover {
+  background-color: rgb(128, 0, 128);
+  color: white;
+}
+
+#thankyou-message {
+  align-items: center;
+  background-color: rgba(128, 0, 128, 0.8);
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  height: 75%;
+  justify-content: center;
+  width: 100%;
+}
+
+#honeypot {
+  display: none; /*makes the field not visible to humans*/
+}
+
+
+
+
+
+/******************************************************************************
+  Footer
+******************************************************************************/
+
+footer {
+  background: rgb(0,150,255);;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.oi-chevron-top {
+  color: white;
+  font-size: 24px;
+}
+
+.oi-chevron-top:hover {
+  color: lightgrey;
+}
+
+.oi-code {
+  color: lightgrey;
+  padding: 0 2px;
+}
+
+.oi-heart {
+  color: red;
+  padding: 0 2px;
+}
+
+.oi-bolt {
+  color: yellow;
+  padding: 0 2px;
+}
+
+#gerardoOsioLink:hover {
+  color: rgb(253,112,20);
+  text-decoration: none;
+}
+
+#thunderMXLink:hover {
+  color: yellow;
+  text-decoration: none;
+}
